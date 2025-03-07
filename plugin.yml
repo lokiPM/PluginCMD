@@ -1,0 +1,20 @@
+
+name: PluginCMD
+version: 1.1
+main: lokiPM\PluginCMD\Main
+api: 5.0.0
+src-namespace-prefix: lokiPM\PluginCMD
+
+commands:
+  plenable:
+    description: Enable a Plugin.
+    permission: plugincmd.enable
+  pldisable:
+    description: Disable a Plugin.
+    permission: plugincmd.disable
+
+permissions:
+  plugincmd.enable:
+    default: op
+  plugincmd.disable:
+    default: op
